@@ -1,0 +1,27 @@
+{
+	"extends": "@vue/tsconfig/tsconfig.web.json",
+	"include": [
+		"env.d.ts", 
+		"src/**/*", 
+		"src/**/*.vue", 
+		"src/**/*.ts",
+		"mock/**/*.ts"
+	],
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["./src/*"]
+		},
+		"types": [
+			"vite/client"
+		],
+		// "isolatedModules": false,
+		"suppressImplicitAnyIndexErrors": true
+	},
+
+	"references": [
+		{
+			"path": "./tsconfig.config.json"
+		}
+	]
+}
